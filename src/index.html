@@ -5,29 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;700&display=swap');
-
-      body {
-        font-family: 'M PLUS Rounded 1c', --apple-system, BlinkMacSystemFont,
-          'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-          'Segoe UI Emoji', 'Segoe UI Symbol';
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-        overflow-wrap: break-word;
-      }
-    </style>
+    <script
+      src="https://kit.fontawesome.com/5f4fb2dcb8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Lading Profile</title>
   </head>
-  <body>
-    <div class="container px-80 flex justify-center items-center">
-      <h1 class="container text-5xl font-bold">Grumpy</h1>
-      <nav>
-        <ul class="flex gap-5 items-center justify-center">
-          <li>Home</li>
-          <li>Takes</li>
-        </ul>
+  <main class="w-full p-7 z-20 backdrop-blur-md">
+    <section class="mx-auto max-w-3xl">
+      <nav class="flex items-center gap-3 text-base justify-between">
+        <a href="/" class="group">
+          <h1 class="font-mplus tracking-tighter text-xl font-bold text-white">
+            <img
+              src="../plubic/logo.png"
+              alt="Logo"
+              class="w-5 inline-block transition-transform"
+            />
+            PunGrumpy
+          </h1>
+        </a>
+        <div class="items-center flex text-white transition-color">
+          <ul class="flex gap-6" id="menu">
+            <li>
+              <a
+                href="/"
+                class="hover-underline-animation hover:text-orange-400 border-none font-semibold"
+                onclick="toggleMenu()"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://pun-grumpy.vercel.app"
+                class="hover-underline-animation hover:text-orange-400 border-none font-semibold"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://pun-grumpy-takes.vercel.app"
+                class="hover-underline-animation hover:text-orange-400 border-none font-semibold"
+                >Takes</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div>
-  </body>
+      <div>
+        <img
+          src="../plubic/Masthead.jpg"
+          alt="Masthead"
+          class="border-2 border-zinc-700 rounded-lg drop-shadow-2xl mt-12"
+        />
+      </div>
+      <div class="my-8">
+        <h2 class="font-mplus font-bold text-white text-4xl">
+          Noppakorn Kaewsalabnil
+        </h2>
+        <p class="text-base text-white/50 mt-2">
+          Student computer science base in Thailand
+        </p>
+      </div>
+      <div class="my-8 text-white text-base">
+        <h3 class="font-mplus font-bold text-2xl mb-3">Bio</h3>
+        <p class="font-normal">
+          2002
+          <span class="ml-5 text-white/50"
+            >I was born in Bangkok, Thailand</span
+          >
+        </p>
+        <p class="font-normal">
+          2020
+          <span class="ml-5 text-white/50"
+            >Graduated from high school at Sriayudhya School</span
+          >
+        </p>
+        <p class="font-normal">
+          2021
+          <span class="ml-5 text-white/50">Start learning programming</span>
+        </p>
+        <p class="font-normal">
+          2022
+          <span class="ml-5 text-white/50"
+            >Study at 1st - King Mongkut's Institute of Technology
+            Ladkrabang</span
+          >
+        </p>
+      </div>
+      <div class="my-8 text-white text-base">
+        <h3 class="font-mplus font-semibold text-2xl mb-6">Created with</h3>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <li class="text-center mb-4">
+            <a
+              href="https://html.com/"
+              class="text-orange-500 dark:text-orange-400 xl:text-zinc-900 xl:dark:text-zinc-300 xl:hover:text-orange-400 xl:hover:dark:text-orange-400 relative transition-all duration-300 cursor-pointer filter 2xl:grayscale 2xl:hover:grayscale-0"
+            >
+              <img
+                src="../plubic/html.png"
+                alt="HTML"
+                width="720 * 2"
+                aspect-ratio="2.0"
+                class="h-[189px] border border-slate-300 dark:border-zinc-700 rounded-xl"
+              />
+              <div class="mt-3 text-xl font-semibold">HTML</div>
+            </a>
+            <div class="opacity-70">
+              The standard markup language for documents
+            </div>
+          </li>
+          <li class="text-center mb-4">
+            <a
+              href="https://html.com/"
+              class="text-orange-500 dark:text-orange-400 xl:text-zinc-900 xl:dark:text-zinc-300 xl:hover:text-orange-400 xl:hover:dark:text-orange-400 relative transition-all duration-300 cursor-pointer filter 2xl:grayscale 2xl:hover:grayscale-0"
+            >
+              <img
+                src="../plubic/tailwindcss.png"
+                alt="Tailwindcss"
+                width="720 * 2"
+                aspect-ratio="2.0"
+                class="border border-slate-300 dark:border-zinc-700 rounded-xl"
+              />
+              <div class="mt-3 text-xl font-semibold">Tailwindcss</div>
+            </a>
+            <div class="opacity-70">CSS Framework for decorated websites</div>
+          </li>
+        </ul>
+      </div>
+      <div class="flex justify-center items-center">
+        <ul class="flex gap-4 mt-8 scale-120 transition duration-200">
+          <li>
+            <a href="#" class="text-white hover:text-orange-400"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-orange-400"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-orange-400"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-orange-400"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </main>
 </html>
